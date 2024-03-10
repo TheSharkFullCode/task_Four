@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { useRef } from 'react'
-
+import teodorico from "../src/componet/reyes/rey_teodorico.png";
 import './App.css'
+import ComponetState from './componet/ComponetState';
 
 function App() {
 
@@ -13,12 +14,15 @@ function App() {
 
   
   const handleClick = () => {
+
     const num1 = parseInt(input1Ref.current.value);
     const num2 = parseInt(input2Ref.current.value);
     const result = num1 + num2;
      
     setCount(result);
     pizarraRef.current.value = `${result}`
+
+    
   }
 
   return (
@@ -36,7 +40,9 @@ function App() {
 
            <textarea  ref={pizarraRef} className='border-[2px] border-[black] rounded resize-none text-center text-5xl w-[90px] h-[60px]  '  name="pizarra" id="pizarra" ></textarea>
       </div>
-      
+      <div>
+        <ComponetState img={teodorico}/>
+      </div>
     </div>
   )
 }
