@@ -6,6 +6,7 @@ import reyIncongnito from "./reyes/rey_incognito.png";
 
 function ComponetState({img}) {
 
+
     const [imagenActual, setImagenActual]=useState(img)
 
     const  CambiarImagen=()=>{
@@ -29,9 +30,11 @@ function ComponetState({img}) {
         </div>
         <div className='border-[2px] rounded'>
 
-            <img src={reyIncongnito} alt="rey_leogivildo" />
+            <img src={leogivildo} alt="rey_leogivildo" />
         </div>
+        
     </div>
+
   )
 }
 
