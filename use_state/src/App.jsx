@@ -5,6 +5,7 @@ import reyIncognito from "../src/componet/reyes/rey_incognito.png";
 import './App.css'
 import ComponetState from './componet/ComponetState';
 import Mycomponenstate from './componet/Mycomponenstate';
+import UseForm from './componet/formulario/UseForm';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
   }
 
   return (
+    
     <div>
       <div className='flex items-center justify-center border-[2px] border-[green] rounded-[4px] h-[100px] bg-[#ffae00]'>  
             <h1 className='text-[#1a0715] text-6xl '>welcome to my app page web</h1>
@@ -45,9 +47,12 @@ function App() {
 
       </div>
     
-      <div className='border-[2px] h-[450px] bg-slate-500'>
+      <div className='border-[2px] h-[650px] bg-slate-500'>
         <ComponetState img={reyIncognito}/>
         <Mycomponenstate count={count} setCount={setCount}/>
+
+        <UseForm/>
+
       </div>
 
     </div>

@@ -3,6 +3,7 @@ import imagenRey from './reyes/rey_atanagildo.png';
 import  ataulfo  from './reyes/rey_ataulfo.png';
 import leogivildo from "./reyes/rey_leogivildo.png";
 import reyIncongnito from "./reyes/rey_incognito.png";
+import ervigio from "./reyes/rey_ervigio.png";
 
 function ComponetState({img}) {
 
@@ -11,7 +12,10 @@ function ComponetState({img}) {
 
     const  CambiarImagen=()=>{
 
-        setImagenActual(imagenRey);
+
+        const nuevaImagen = imagenActual === imagenRey  ? reyIncongnito : imagenRey;
+
+        setImagenActual(nuevaImagen);
     }
 
   return (
@@ -30,7 +34,7 @@ function ComponetState({img}) {
         </div>
         <div className='border-[2px] rounded'>
 
-            <img src={leogivildo} alt="rey_leogivildo" />
+            <img src={ervigio} alt="rey_leogivildo" />
         </div>
         
     </div>
