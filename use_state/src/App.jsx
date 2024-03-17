@@ -6,6 +6,7 @@ import './App.css'
 import ComponetState from './componet/ComponetState';
 import Mycomponenstate from './componet/Mycomponenstate';
 import UseForm from './componet/formulario/UseForm';
+import ComponetCounter from './componet/botonestate/ComponetCounter';
 
 
 function App() {
@@ -52,8 +53,11 @@ function App() {
         <Mycomponenstate count={count} setCount={setCount}/>
 
         <UseForm/>
+        <ComponetCounter/>
+
 
       </div>
+
 
     </div>
   )
